@@ -1,0 +1,7 @@
+data/
+*.sqlite3
+*.db
+*.env
+*progress*.json
+*backup*
+__pycache__/

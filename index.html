@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#315d49" id="theme-color">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Irodori">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="apple-touch-icon" href="./icon-180.png">
+  <script>try{document.documentElement.dataset.theme=localStorage.getItem('irodori-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');}catch{}</script>
+  <title>Irodori · Tiếng Nhật mỗi ngày</title><link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <a href="#today" class="brand"><span class="brand-mark">い</span><span>irodori<small>TIẾNG NHẬT MỖI NGÀY</small></span></a>
+    <div class="side-label">GÓC HỌC CỦA BẠN</div>
+    <nav aria-label="Điều hướng chính">
+      <button data-view="today" class="nav active"><span>◷</span> Hôm nay</button>
+      <button data-view="library" class="nav"><span>▤</span> Bài học</button>
+      <button data-view="writing" class="nav"><span>✎</span> Luyện viết</button>
+      <button data-view="reviews" class="nav"><span>↻</span> Ôn tập <b id="due-badge">0</b></button>
+      <button data-view="progress" class="nav"><span>▥</span> Tiến độ</button>
+      <button data-view="settings" class="nav"><span>⚙</span> Góc cá nhân</button>
+    </nav>
+    <div class="side-note"><span class="tiny-kana">一歩ずつ</span><p>Mỗi ngày một chút.<br>Vững vàng từng bước.</p></div>
+    <div class="profile"><span>Q</span><div>Người học<small>Bắt đầu từ nền tảng</small></div></div>
+  </aside>
+  <main>
+    <header><div><span class="eyebrow">KHÔNG GIAN HỌC TẬP</span><p id="date"></p></div><div class="header-actions"><button id="theme-toggle" class="secondary" aria-label="Đổi giao diện sáng tối">☾ Giao diện tối</button><button id="install-app" class="secondary">＋ Thêm vào màn hình chính</button></div></header>
+    <div id="notice" role="status" aria-live="polite"></div>
+    <section id="content"></section>
+    <footer>Irodori Study · Nền tảng trước N5 <span>Học theo nhịp của bạn</span></footer>
+  </main>
+  <script src="./local-store.js" defer></script>
+  <script src="./app.js" defer></script>
+  <script src="./writing.js" defer></script>
+  <script src="./preferences.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Adapted from KanjiVG, Copyright Ulrich Apel, CC BY-SA 3.0. https://kanjivg.tagaini.net/ -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 125 165"><g transform="translate(0,24)"><rect x="1" y="1" width="108" height="108" fill="white" stroke="#dce2dc"/><g fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M60.66,15c0.5,1.62,0.35,5.44-1,7.38c-6.75,9.62-14.3,19.08-18.62,24.5c-4,5-3.79,7.03-0.88,11c5.5,7.5,12.75,18.75,17.62,27.25c1.48,2.59,2.75,4.75,4.5,8.62" stroke="#c94d45"/></g><text x="54" y="128" text-anchor="middle" font-size="14" fill="#20352d">1</text></g></svg>
